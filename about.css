@@ -1,0 +1,147 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container > div:nth-child(1n) {
+  background-color: black;	
+}
+.container > div:nth-child(2n) {
+  background-color:white;
+}
+.container > div:nth-child(3n) {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.container{
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40%, auto, 40%;
+  grid-template-areas: 
+  "h h h h h h h h h h h h"
+  "c c c c c c c c c c c c"
+  "g g g g g g g g g g g g";
+
+}
+
+.nav-con{
+  grid-area: h;
+}
+.header-con{
+  grid-area: c;
+}
+.body-con{
+  grid-area: g;
+}
+
+
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+
+
+.nav-con{
+  width: 100%;
+  margin-right:auto;
+  padding-left: 6%;
+  padding-bottom: 1.2%;
+
+}
+nav a{
+  color: goldenrod;
+  text-decoration: none;
+  padding-right: 2%;
+  font-family: Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+}
+a:hover{
+  color:rgb(1, 69, 136);
+}
+a:active{
+  color: white;
+}
+nav{
+  height:9%;
+  font-size:1.4em;
+  text-align:left;
+  padding-top: 1.5%;
+  width:100%;
+}
+ /*-------------------------------------- NAV ^ -----------------*/
+.padding{
+  width:10%;
+  max-width:100%;
+  margin-left: 5%;
+}
+.name{
+  width: 55%;
+  margin-left: 48%;
+  margin-top: -12%;
+}
+.img{
+  margin-left: 50%;
+  max-width: 2%;
+  margin-left: 48%;
+  margin-top: -30%;
+  position: relative;
+}
+.info{
+  max-width: 30%;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+/*----------------------------- Body -------------------------*/
+button{
+  color:goldenrod;
+  background-color: white;
+  border: none;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5%;
+}
+button:hover{
+  color:goldenrod;
+  background-color: rgb(1, 69, 136);
+}
+button:active{
+  color: white;
+}
+/*----------------------------- Button -------------------------*/
+h1{
+  min-width: 50%;
+  width: 100%;
+  color:rgb(151, 150, 150);
+  font-family: Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 4em;
+}
+h2{
+  width: 50%;
+  max-width: 50%;
+  min-width: 50%;
+  color: rgb(151, 150, 150);
+  font-family: Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2em
+}
+h3{
+  width: 100%;
+  font-family: Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+h4{
+  width: 100%;
+  font-family: Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1em;
+}
+a {
+  color:goldenrod;
+}
